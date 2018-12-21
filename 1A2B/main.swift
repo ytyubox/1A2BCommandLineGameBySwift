@@ -61,6 +61,7 @@ while answer.count < 4{
 
 print("1A2B Game:\n",answer)
 var status:(A:Int,B:Int) = (0,0)
+
 while true{
 	if status.A == 4{ print("You Win! the answer is", answer)
 		break
@@ -68,7 +69,7 @@ while true{
 	input = getString("Guess: ")
 	if !isValid(input)
 	{
-		print("Only 4 unique digits numbers.")
+		
 		continue
 	}
 	status = (0,0)
