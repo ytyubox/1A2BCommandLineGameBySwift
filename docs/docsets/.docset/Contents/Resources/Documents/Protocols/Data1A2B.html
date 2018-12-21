@@ -14,7 +14,7 @@
     <a title="Data1A2B Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (4% documented)</p>
+        <p><a href="../index.html"> Docs</a> (71% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -69,7 +69,8 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>1A2B的必備資料
+TODO: setAnswer的Random seed</p>
 
           </section>
           <section class="section task-group-section">
@@ -88,7 +89,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>儲存每次輸入的解答</p>
 
                       </div>
                       <div class="declaration">
@@ -115,7 +116,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>可將遊戲限制有效範圍，預設是0&hellip;9，可更動範圍是0&hellip;9</p>
 
                       </div>
                       <div class="declaration">
@@ -123,6 +124,114 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">answerSet</span><span class="p">:</span> <span class="kt">LazyCollection</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">ClosedRange</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">)</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Games8Data1A2BP_9answerSetxSb_s14LazyCollectionVySNySiGGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:answerSet:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Games8Data1A2BP_9answerSetxSb_s14LazyCollectionVySNySiGGtcfc">init(_:answerSet:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="kt">Devaloper</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">answerSet</span><span class="p">:</span> <span class="kt">LazyCollection</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">ClosedRange</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">)</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Games8Data1A2BP9setAnswer9answerSetSSs14LazyCollectionVySNySiGG_tF"></a>
+                    <a name="//apple_ref/swift/Method/setAnswer(answerSet:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Games8Data1A2BP9setAnswer9answerSetSSs14LazyCollectionVySNySiGG_tF">setAnswer(answerSet:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>遊戲多樣性的關鍵，尚未完成seed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setAnswer</span><span class="p">(</span><span class="nv">answerSet</span><span class="p">:</span> <span class="kt">LazyCollection</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">ClosedRange</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">)</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Games8Data1A2BP7isValidySbSSF"></a>
+                    <a name="//apple_ref/swift/Method/isValid(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Games8Data1A2BP7isValidySbSSF">isValid(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>判斷單筆輸入是否有效</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isValid</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Games8Data1A2BP5getAB6answer5inputSi1A_Si1BtSS_SStF"></a>
+                    <a name="//apple_ref/swift/Method/getAB(answer:input:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Games8Data1A2BP5getAB6answer5inputSi1A_Si1BtSS_SStF">getAB(answer:input:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>遊戲重點，回傳AB對應的值</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getAB</span><span class="p">(</span><span class="nv">answer</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">input</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">A</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kt">B</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

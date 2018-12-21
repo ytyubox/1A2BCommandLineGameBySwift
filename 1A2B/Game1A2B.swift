@@ -71,6 +71,5 @@ class Game1A2B:Data1A2B {
 		}
 		print("Thank you for playing 1A2B..",separator: "",terminator: "")
 		GeneralFunc.printInTime(texts: ".", count: 3,newline: true)
-		
 	}
 }

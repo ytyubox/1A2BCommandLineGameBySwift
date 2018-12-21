@@ -12,13 +12,17 @@ import Foundation
 
 class GeneralFunc {
 	static var keyboard = FileHandle.standardInput
-	
+	///取得STD1的資料，str為提示字串，打印之後不換行
+	/// - Parameter str: 提示字串，打印之後不換行
 	static func  getString(_ str:String) -> String {
 		print(str, separator: "",terminator: "")
 		let inputData = keyboard.availableData
 		let strData = String(data: inputData, encoding: String.Encoding.utf8)!
 		return strData.trimmingCharacters(in: CharacterSet.newlines)
 	}
+	
+	///取得STD1的資料，str為提示字串，打印之後不換行
+	/// - Parameter str: 提示字串，打印之後不換行
 	static func printInTime(texts:String...,count:UInt,newline:Bool = false,interval:UInt32 = 1){
 		for _ in 0..<count{
 			for text in texts
