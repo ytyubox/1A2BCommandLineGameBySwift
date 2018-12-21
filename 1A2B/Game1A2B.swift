@@ -47,7 +47,7 @@ class Game1A2B:Data1A2B {
 		return answer
 	}
 	
-	init(_ Devaloper:Bool = false,answerSet:LazyCollection<(ClosedRange<Int>)> = (0...9).lazy)
+	required init(_ Devaloper:Bool = false,answerSet:LazyCollection<(ClosedRange<Int>)> = (0...9).lazy)
 	{
 		answer = setAnswer(answerSet: answerSet)
 		print("1A2B Game:\n")
