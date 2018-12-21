@@ -2,62 +2,6 @@
   "warnings": [
     {
       "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/Game1A2B.swift",
-      "line": 13,
-      "symbol": "Game1A2B.inputArray",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/Game1A2B.swift",
-      "line": 14,
-      "symbol": "Game1A2B.inputString",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/Game1A2B.swift",
-      "line": 15,
-      "symbol": "Game1A2B.status",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/Game1A2B.swift",
-      "line": 16,
-      "symbol": "Game1A2B.answerSet",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/Game1A2B.swift",
-      "line": 17,
-      "symbol": "Game1A2B.answer",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/Game1A2B.swift",
-      "line": 19,
-      "symbol": "Game1A2B.isValid(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/Game1A2B.swift",
-      "line": 25,
-      "symbol": "Game1A2B.getAB(answer:input:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/Game1A2B.swift",
-      "line": 37,
-      "symbol": "Game1A2B.setAnswer(answerSet:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/Game1A2B.swift",
       "line": 50,
       "symbol": "Game1A2B.init(_:answerSet:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
@@ -93,51 +37,9 @@
     },
     {
       "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/PrGameData.swift",
-      "line": 11,
-      "symbol": "GameData",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/PrGameData.swift",
-      "line": 12,
-      "symbol": "GameData.answer",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/PrGameData.swift",
-      "line": 13,
-      "symbol": "GameData.inputArray",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/PrGameData.swift",
-      "line": 14,
-      "symbol": "GameData.inputString",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/PrGameData.swift",
-      "line": 17,
-      "symbol": "Data1A2B",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/PrGameData.swift",
-      "line": 18,
-      "symbol": "Data1A2B.status",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/youzongyu/好想 - 測試/挑戰賽/1A2B/1A2B/PrGameData.swift",
-      "line": 19,
-      "symbol": "Data1A2B.answerSet",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "line": 28,
+      "symbol": "Data1A2B.init(_:answerSet:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
