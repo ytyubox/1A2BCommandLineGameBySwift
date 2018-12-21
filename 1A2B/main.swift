@@ -59,7 +59,7 @@ while answer.count < 4{
 
 
 
-print("1A2B Game:\n",answer)
+print("1A2B Game:\n")
 var status:(A:Int,B:Int) = (0,0)
 
 while true{
