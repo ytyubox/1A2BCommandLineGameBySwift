@@ -19,7 +19,7 @@ while true {
 	let game = input.components(separatedBy: " ")
 	if game.count == 2 && game[1].uppercased() == "TEST"  {
 		isTest = true
-		print("==========TEST MODE========")
+		print("=============TEST MODE===========")
 	}
 	switch game[0].uppercased(){
 	case "EXIT":
@@ -30,6 +30,7 @@ while true {
 		continue
 	}
 	if isTest{
-		print("=======TEST MODE END=======")
+		print("==========TEST MODE END==========")
 	}
+	print(".\n..\n...")
 }

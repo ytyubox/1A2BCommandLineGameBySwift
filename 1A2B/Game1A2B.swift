@@ -9,7 +9,17 @@
 import Foundation
 
 ///TODO: 將Ｐ和Ｆ不可被外界呼叫
-class Game1A2B:Data1A2B {
+class Game1A2B:Pr_Data1A2B {
+	var openString: String = """
+	 __          ___  ____
+	/_ |   /\\   |__ \\|  _ \\
+	 | |  /  \\     ) | |_) |
+	 | | / /\\ \\   / /|  _ <
+	 | |/ ____ \\ / /_| |_) |
+	 |_/_/    \\_\\____|____/
+	"""
+	
+	
 	var inputArray: [String] = []
 	var inputString = String()
 	var status:(A:Int,B:Int) = (0,0)
@@ -35,21 +45,24 @@ class Game1A2B:Data1A2B {
 	}
 	
 	func setAnswer(answerSet:LazyCollection<(ClosedRange<Int>)>) -> String {
-		var answer:String = ""
-		while answer.count < 4{
-			var isOK = true
-			let tmp = answerSet.randomElement() ?? 0
-			for i in answer{
-				if String(i) == String(tmp) {isOK = false}
-			}
-			if isOK {answer += String(tmp)}
+		let range = (0...9).lazy
+		return Array(range).shuffled()[0...3].map {String($0)}.joined(separator: "")
+
+	}
+	
+	func printGameOver(isFinish:Bool = true) {
+		if isFinish{ print("Thank you for playing 1A2B..",separator: "",terminator: "")
+			GeneralFunc.printInTime(texts: ".", count: 3,newline: true)
 		}
-		return answer
+		print("Press any key to continue...", separator: "", terminator: "")
+		let _ = GeneralFunc.GetKeyPress()
+		print()
 	}
 	
 	required init(_ Devaloper:Bool = false,answerSet:LazyCollection<(ClosedRange<Int>)> = (0...9).lazy)
 	{
 		answer = setAnswer(answerSet: answerSet)
+		print(openString)
 		print("1A2B Game:\n")
 		if Devaloper {print(answer)}
 		while true
@@ -59,6 +72,7 @@ class Game1A2B:Data1A2B {
 			}
 			inputString = GeneralFunc.getString("Guess: ").components(separatedBy: " ")[0]
 			if inputString.uppercased() == "EXIT" {
+				printGameOver(isFinish: false)
 				return
 			}
 			if !isValid(inputString){
@@ -66,10 +80,8 @@ class Game1A2B:Data1A2B {
 				continue
 			}
 			status = getAB(answer: answer, input: inputString)
-			GeneralFunc.printInTime(texts: ".", count: 3)
 			GeneralFunc.printInTime(texts: "\(status.A)A","\(status.B)B", count: 1, newline: true, interval: 1)
 		}
-		print("Thank you for playing 1A2B..",separator: "",terminator: "")
-		GeneralFunc.printInTime(texts: ".", count: 3,newline: true)
+		printGameOver()
 	}
 }

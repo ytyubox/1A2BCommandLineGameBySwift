@@ -9,18 +9,20 @@
 import Foundation
 
 ///基本遊戲必備資料
-protocol  GameData {
+protocol  Pr_GameData {
+	///遊戲開場圖形
+	var openString:String 	{get}
 	///遊戲正確答案
 	var answer:String 		{get}
 	///STD1轉換成argv格式
-	var inputArray:[String] 	{get}
+	var inputArray:[String] {get}
 	///STD1轉換成基本字串
 	var inputString:String	{get}
 }
 
 ///1A2B的必備資料
 ///TODO: setAnswer的Random seed
-protocol Data1A2B:GameData {
+protocol Pr_Data1A2B:Pr_GameData {
 	///儲存每次輸入的解答
 	var status:(A:Int,B:Int) 	{get}
 	///可將遊戲限制有效範圍，預設是0...9，可更動範圍是0...9
@@ -32,4 +34,6 @@ protocol Data1A2B:GameData {
 	func isValid(_ input:String) -> Bool
 	///遊戲重點，回傳AB對應的值
 	func getAB(answer:String,input:String)->(A:Int,B:Int)
+	///遊戲結束時，打印出“遊戲結束”
+	func printGameOver(isFinish:Bool)
 }
