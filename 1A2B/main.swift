@@ -12,7 +12,18 @@ enum Game:String {
 	case Game1A2B = "1A2B"
 }
 
+let openString = """
+ _____
+/ ____|
+| |  __  __ _ _ __ ___   ___
+| | |_ |/ _` | '_ ` _ \\ / _ \\
+| |__| | (_| | | | | | |  __/
+ \\_____|\\__,_|_| |_| |_|\\___|
+"""
+
+
 while true {
+	print(openString)
 	print("Welecome!\n\tNow we have:\n\t1A2B")
 	let input = GeneralFunc.getString("Please choose a game: ")
 	var isTest = false

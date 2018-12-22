@@ -15,7 +15,8 @@ class GeneralFunc {
 	///取得STD1的資料，str為提示字串，打印之後不換行
 	/// - Parameter str: 提示字串，打印之後不換行
 	static func  getString(_ str:String) -> String {
-		print(str, separator: "",terminator: "")
+//		print(str, separator: "",terminator: "")
+		write(1, str, str.count)
 		let inputData = keyboard.availableData
 		let strData = String(data: inputData, encoding: String.Encoding.utf8)!
 		return strData.trimmingCharacters(in: CharacterSet.newlines)
